@@ -74,3 +74,23 @@ A calendar type app that will keep track of your workouts for the week. It works
 
 ## Wireframes
 <img src="https://i.imgur.com/VD9J5qx.jpg" width=600>
+
+## Schema 
+### Models
+#### User
+
+   | Property      | Type     | Description                            |
+   | ------------- | -------- | ---------------------------------------|
+   | objectId      | String   | unique id for the user (default field) |
+   | Username      | String   | Name the user wants to go by           |
+   | Age           | Int      | The users current age                  |
+   | Sex           | String   | The users sex/gender                   |
+   | Height        | Int      | How tall the user is in inches         |
+   | Weight        | Int      | How much the user weighs in lbs        |
+   
+### Networking
+#### List of network requests by screen
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Delete) User deletes workout
+      - (Update) User adds workout
