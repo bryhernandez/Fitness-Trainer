@@ -13,11 +13,11 @@ A calendar type app that will keep track of your workouts for the week. It works
 ### App Evaluation
 
 - **Category:** Health and Fitness
-- **Mobile:** [Will come back to it]
+- **Mobile:** This app is being developed fo rprimarily IOS devices.
 - **Story:** [Will come back to it]
-- **Market:** Fitness Industry
-- **Habit:** [Will come back to it]
-- **Scope:** [Will come back to it]
+- **Market:** Fitness industry
+- **Habit:** This app can be sued whenever the user worksout. They can do it before they start a workout and after they finish the workout as well. 
+- **Scope:** The user will be able to create an account and start logging and scheduling their workouts. They will also be able to log their sets as they are working out. Some optional stories we are thinking we will be implementing a rest timer and also a macro calculator. 
 
 ## Product Spec
 
