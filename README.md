@@ -88,6 +88,14 @@ A calendar type app that will keep track of your workouts for the week. It works
    | Height        | Int      | How tall the user is in inches         |
    | Weight        | Int      | How much the user weighs in lbs        |
    
+#### Workout
+
+   | Property      | Type             | Description                            |
+   | ------------- | ---------------- | ---------------------------------------|
+   | bodyPart      | String           | what body part the excercise works out |
+   | User          | Pointer to User  | The user who is doing this workout     |
+   | Name          | String           | Name of the workout                    |
+   
 ### Networking
 #### List of network requests by screen
    - Profile Screen
