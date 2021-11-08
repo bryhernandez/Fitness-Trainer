@@ -12,7 +12,6 @@
 		87AB96CA49B0FB3D853C705E /* Pods_Fitness_TrainerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB60C30C99C0AEEB50906AFF /* Pods_Fitness_TrainerTests.framework */; };
 		DE2205DC2727184D00499F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2205DB2727184D00499F02 /* AppDelegate.swift */; };
 		DE2205DE2727184D00499F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2205DD2727184D00499F02 /* SceneDelegate.swift */; };
-		DE2205E02727184D00499F02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2205DF2727184D00499F02 /* ViewController.swift */; };
 		DE2205E32727184D00499F02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2205E12727184D00499F02 /* Main.storyboard */; };
 		DE2205E62727184D00499F02 /* Fitness_Trainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE2205E42727184D00499F02 /* Fitness_Trainer.xcdatamodeld */; };
 		DE2205E82727184E00499F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2205E72727184E00499F02 /* Assets.xcassets */; };
@@ -20,6 +19,7 @@
 		DE2205F62727184E00499F02 /* Fitness_TrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2205F52727184E00499F02 /* Fitness_TrainerTests.swift */; };
 		DE2206002727184E00499F02 /* Fitness_TrainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2205FF2727184E00499F02 /* Fitness_TrainerUITests.swift */; };
 		DE2206022727184E00499F02 /* Fitness_TrainerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2206012727184E00499F02 /* Fitness_TrainerUITestsLaunchTests.swift */; };
+		DE4A9EFD2738DF6600C2ADFC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		DE2205D82727184D00499F02 /* Fitness Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2205DB2727184D00499F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE2205DD2727184D00499F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE2205DF2727184D00499F02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE2205E22727184D00499F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE2205E52727184D00499F02 /* Fitness_Trainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fitness_Trainer.xcdatamodel; sourceTree = "<group>"; };
 		DE2205E72727184E00499F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		DE2205FB2727184E00499F02 /* Fitness TrainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fitness TrainerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2205FF2727184E00499F02 /* Fitness_TrainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_TrainerUITests.swift; sourceTree = "<group>"; };
 		DE2206012727184E00499F02 /* Fitness_TrainerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_TrainerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E3768584F106A6656CB1895E /* Pods-Fitness TrainerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness TrainerTests.debug.xcconfig"; path = "Target Support Files/Pods-Fitness TrainerTests/Pods-Fitness TrainerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				E3768584F106A6656CB1895E /* Pods-Fitness TrainerTests.debug.xcconfig */,
 				B9CFF2B02B791EB5C4284F2F /* Pods-Fitness TrainerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,12 +143,12 @@
 			children = (
 				DE2205DB2727184D00499F02 /* AppDelegate.swift */,
 				DE2205DD2727184D00499F02 /* SceneDelegate.swift */,
-				DE2205DF2727184D00499F02 /* ViewController.swift */,
 				DE2205E12727184D00499F02 /* Main.storyboard */,
 				DE2205E72727184E00499F02 /* Assets.xcassets */,
 				DE2205E92727184E00499F02 /* LaunchScreen.storyboard */,
 				DE2205EC2727184E00499F02 /* Info.plist */,
 				DE2205E42727184D00499F02 /* Fitness_Trainer.xcdatamodeld */,
+				DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */,
 			);
 			path = "Fitness Trainer";
 			sourceTree = "<group>";
@@ -410,8 +409,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4A9EFD2738DF6600C2ADFC /* LoginViewController.swift in Sources */,
 				DE2205E62727184D00499F02 /* Fitness_Trainer.xcdatamodeld in Sources */,
-				DE2205E02727184D00499F02 /* ViewController.swift in Sources */,
 				DE2205DC2727184D00499F02 /* AppDelegate.swift in Sources */,
 				DE2205DE2727184D00499F02 /* SceneDelegate.swift in Sources */,
 			);
