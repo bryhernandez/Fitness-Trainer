@@ -25,7 +25,7 @@ A calendar type app that will keep track of your workouts for the week. It works
 
 **Required Must-have Stories**
 
-- [x] * Create a "Login"
+*- [x] Create a "Login"
 * Create a "Create Account"
 * Schedule: Show your schedule that you have already created for yourself
     * Ability to modify or delete
