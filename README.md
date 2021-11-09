@@ -102,4 +102,6 @@ A calendar type app that will keep track of your workouts for the week. It works
       - (Read/GET) Query logged in user object
       - (Delete) User deletes workout
       - (Update) User adds workout
+
+
 ![](https://i.imgur.com/M8pzZRi.gif)
