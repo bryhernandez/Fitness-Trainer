@@ -53,6 +53,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Create Account"/>
                                 <connections>
                                     <action selector="onCreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w8a-5S-VO5"/>
+                                    <segue destination="pgK-zF-Gxd" kind="presentation" id="Kuo-Vf-50E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnY-nd-FWh">
@@ -62,6 +63,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
                                 <connections>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SF4-bU-3Iw"/>
+                                    <segue destination="6di-eE-fIT" kind="presentation" id="dL8-A8-Ka4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dont have an account? Create one!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVg-G2-RPS">
@@ -79,7 +81,6 @@
                         <outlet property="loginTextField" destination="Nn3-o5-Wc2" id="Ifd-GF-w4z"/>
                         <outlet property="passwordTextField" destination="cBj-bQ-B7o" id="DA8-8m-xZC"/>
                         <outlet property="usernameTextField" destination="Nn3-o5-Wc2" id="QuL-g6-2eA"/>
-                        <segue destination="6di-eE-fIT" kind="presentation" id="Fds-Mm-msi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -91,7 +92,7 @@
             <objects>
                 <viewController id="pgK-zF-Gxd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ssu-Kq-ozH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPN-gO-cFB">
@@ -140,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ada-aG-bfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2578" y="83"/>
+            <point key="canvasLocation" x="129" y="796"/>
         </scene>
         <!--main-->
         <scene sceneID="XUH-lV-BfY">
