@@ -10,6 +10,8 @@ import Parse
 
 class HomePageViewController: UIViewController {
 
+    @IBOutlet weak var macrosButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
