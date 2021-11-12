@@ -78,7 +78,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="loginTextField" destination="Nn3-o5-Wc2" id="Ifd-GF-w4z"/>
                         <outlet property="passwordTextField" destination="cBj-bQ-B7o" id="DA8-8m-xZC"/>
                         <outlet property="usernameTextField" destination="Nn3-o5-Wc2" id="QuL-g6-2eA"/>
                     </connections>
