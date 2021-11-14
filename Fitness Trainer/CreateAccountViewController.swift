@@ -32,21 +32,43 @@ class CreateAccountViewController: UIViewController {
         let height:Int? = Int(heightTextField.text!)
         let weight:Int? = Int(weightTextField.text!)
         
-        let user = PFUser()
-        user.username = usernameTextField.text
-        user.password = passwordTextField.text
-        user["Sex"] = sex
-        user["Age"] = age
-        user["Height"] = height
-        user["Weight"] = weight
+        while sex != nil && age != nil && height != nil && weight != nil {
+            let user = PFUser()
+            user.username = usernameTextField.text
+            user.password = passwordTextField.text
+            user["Sex"] = sex
+            user["Age"] = age
+            user["Height"] = height
+            user["Weight"] = weight
 
-        user.signUpInBackground { (success, error) in
-            if success{
-                self.performSegue(withIdentifier: "successfulSignupSegue", sender: nil)
-            } else {
-                print("Error: \(error?.localizedDescription)")
+            user.signUpInBackground { (success, error) in
+                if success{
+                    self.performSegue(withIdentifier: "successfulSignupSegue", sender: nil)
+                } else {
+                    print("Error: \(error?.localizedDescription)")
+                }
             }
         }
+        
+        if sex == nil || age == nil || height == nil || weight == nil{
+            print("Cannot leave any values empty.")
+        }
+        
+//        let user = PFUser()
+//        user.username = usernameTextField.text
+//        user.password = passwordTextField.text
+//        user["Sex"] = sex
+//        user["Age"] = age
+//        user["Height"] = height
+//        user["Weight"] = weight
+//
+//        user.signUpInBackground { (success, error) in
+//            if success{
+//                self.performSegue(withIdentifier: "successfulSignupSegue", sender: nil)
+//            } else {
+//                print("Error: \(error?.localizedDescription)")
+//            }
+//        }
         
     }
     /*
