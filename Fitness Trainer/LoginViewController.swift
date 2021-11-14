@@ -37,18 +37,19 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onCreateAccount(_ sender: Any) {
-        //TODO: Save to Parse database and create account
-        let user = PFUser()
-        user.username = usernameTextField.text
-        user.password = passwordTextField.text
-        
-        user.signUpInBackground { (success, error) in
-            if success{
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            } else {
-                print("Error: \(error?.localizedDescription)")
-            }
-        }
+        //TODO: Take you to different View Controller to enter your information.
+        self.performSegue(withIdentifier: "createAccountSegue", sender: nil)
+//        let user = PFUser()
+//        user.username = usernameTextField.text
+//        user.password = passwordTextField.text
+//
+//        user.signUpInBackground { (success, error) in
+//            if success{
+//                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+//            } else {
+//                print("Error: \(error?.localizedDescription)")
+//            }
+//        }
     }
     
     
