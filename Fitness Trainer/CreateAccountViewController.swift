@@ -2,13 +2,22 @@
 //  CreateAccountViewController.swift
 //  Fitness Trainer
 //
-//  Created by Oscar on 11/8/21.
+//  Created by Bryan Hernandez on 11/13/21.
 //
 
 import UIKit
+import Parse
 
 class CreateAccountViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var sexTextField: UITextField!
+    @IBOutlet weak var heightTextField: UITextField!
+    @IBOutlet weak var weightTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +25,30 @@ class CreateAccountViewController: UIViewController {
     }
     
 
+    @IBAction func onSignUp(_ sender: Any) {
+        //TODO: Save all information into parse database.
+        let sex = sexTextField.text
+        let age:Int? = Int(ageTextField.text!)
+        let height:Int? = Int(heightTextField.text!)
+        let weight:Int? = Int(weightTextField.text!)
+        
+        let user = PFUser()
+        user.username = usernameTextField.text
+        user.password = passwordTextField.text
+        user["Sex"] = sex
+        user["Age"] = age
+        user["Height"] = height
+        user["Weight"] = weight
+
+        user.signUpInBackground { (success, error) in
+            if success{
+                self.performSegue(withIdentifier: "successfulSignupSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
+        
+    }
     /*
     // MARK: - Navigation
 

@@ -21,6 +21,7 @@
 		DE2206022727184E00499F02 /* Fitness_TrainerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2206012727184E00499F02 /* Fitness_TrainerUITestsLaunchTests.swift */; };
 		DE30E8E2273E28C000791E8D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE30E8E1273E28C000791E8D /* HomePageViewController.swift */; };
 		DE4A9EFD2738DF6600C2ADFC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */; };
+		DEED3CC62740727D00930C38 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED3CC52740727D00930C38 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		DE2206012727184E00499F02 /* Fitness_TrainerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_TrainerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DE30E8E1273E28C000791E8D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DEED3CC52740727D00930C38 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		E3768584F106A6656CB1895E /* Pods-Fitness TrainerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness TrainerTests.debug.xcconfig"; path = "Target Support Files/Pods-Fitness TrainerTests/Pods-Fitness TrainerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				DE2205E42727184D00499F02 /* Fitness_Trainer.xcdatamodeld */,
 				DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */,
 				DE30E8E1273E28C000791E8D /* HomePageViewController.swift */,
+				DEED3CC52740727D00930C38 /* CreateAccountViewController.swift */,
 			);
 			path = "Fitness Trainer";
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEED3CC62740727D00930C38 /* CreateAccountViewController.swift in Sources */,
 				DE4A9EFD2738DF6600C2ADFC /* LoginViewController.swift in Sources */,
 				DE2205E62727184D00499F02 /* Fitness_Trainer.xcdatamodeld in Sources */,
 				DE2205DC2727184D00499F02 /* AppDelegate.swift in Sources */,
