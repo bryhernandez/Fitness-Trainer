@@ -184,7 +184,13 @@
                         <viewLayoutGuide key="safeArea" id="rIP-oF-VhB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WtD-df-hl8"/>
+                    <navigationItem key="navigationItem" id="WtD-df-hl8">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="5G9-j9-3Ni">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="a88-B5-q1M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ageTextField" destination="gW7-tz-oGl" id="8hY-GB-e7r"/>
                         <outlet property="heightTextField" destination="yzJ-0L-OhX" id="FAV-eQ-EA7"/>
@@ -208,7 +214,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0L-ao-ci8">
-                                <rect key="frame" x="129" y="391" width="117" height="31"/>
+                                <rect key="frame" x="95" y="391" width="184" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Check Macros"/>
@@ -230,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDY-bg-AX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="83"/>
+            <point key="canvasLocation" x="1844" y="82.758620689655174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O1e-nK-BNc">
@@ -270,7 +276,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Zu-bm-jmj"/>
+        <segue reference="7yN-eo-QAM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Fitness Trainer" width="500" height="500"/>
