@@ -206,6 +206,22 @@
             </objects>
             <point key="canvasLocation" x="1353" y="323"/>
         </scene>
+        <!--Create Schedule View Controller-->
+        <scene sceneID="nbx-N3-eyJ">
+            <objects>
+                <viewController id="6B2-GF-aEJ" customClass="CreateScheduleViewController" customModule="Fitness_Trainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qaE-wd-94j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RcT-vY-3Bl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Inn-4N-lRK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJZ-uN-KEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="1054"/>
+        </scene>
         <!--Home Page View Controller-->
         <scene sceneID="yGM-EA-jKv">
             <objects>
@@ -385,6 +401,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjg-Zq-Hhz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-980" y="1040"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7d6-2C-EeG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MJL-YC-szy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9ve-Gj-pmt">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6B2-GF-aEJ" kind="relationship" relationship="rootViewController" id="0ap-BH-ukc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgm-Dy-fno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="1054"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
