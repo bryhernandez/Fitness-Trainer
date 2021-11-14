@@ -253,7 +253,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="createPlan" destination="xqE-6I-hVa" id="yjE-0I-KSF"/>
                         <outlet property="macrosButton" destination="C0L-ao-ci8" id="G0l-3r-962"/>
+                        <outlet property="ringTone" destination="fN2-ji-fgw" id="mGv-cX-XbT"/>
+                        <outlet property="viewPlan" destination="fXC-6u-h7R" id="AIE-Sa-b2Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDY-bg-AX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -385,7 +388,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Zu-bm-jmj"/>
+        <segue reference="U1c-Zl-4cF"/>
+        <segue reference="7yN-eo-QAM"/>
         <segue reference="ZFy-Ex-YCE"/>
     </inferredMetricsTieBreakers>
     <resources>
