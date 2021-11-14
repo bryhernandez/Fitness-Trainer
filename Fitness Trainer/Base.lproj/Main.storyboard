@@ -69,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xTa-xo-Dq1"/>
                     <connections>
                         <outlet property="passwordTextField" destination="cBj-bQ-B7o" id="DA8-8m-xZC"/>
                         <outlet property="usernameTextField" destination="Nn3-o5-Wc2" id="QuL-g6-2eA"/>
@@ -187,7 +188,7 @@
                     <navigationItem key="navigationItem" id="WtD-df-hl8">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="5G9-j9-3Ni">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="a88-B5-q1M"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="DYs-Pp-fpt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -218,6 +219,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Check Macros"/>
+                                <connections>
+                                    <segue destination="8ww-jO-BZo" kind="presentation" id="U1c-Zl-4cF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqE-6I-hVa">
                                 <rect key="frame" x="95" y="372" width="184" height="31"/>
@@ -256,6 +260,75 @@
             </objects>
             <point key="canvasLocation" x="-255.19999999999999" y="322.90640394088672"/>
         </scene>
+        <!--Macro Calculator-->
+        <scene sceneID="go6-cP-U05">
+            <objects>
+                <viewController storyboardIdentifier="MacroCalcViewController" id="Unm-xq-yWQ" customClass="MacroCalcViewController" customModule="Fitness_Trainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yW6-Wr-kdw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What would you say your activity level is? 1 being the lowest and 5 being the highest. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBZ-MD-btt">
+                                <rect key="frame" x="27" y="88" width="320" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sd5-PE-dP9">
+                                <rect key="frame" x="27" y="175" width="320" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sp-gr-Cmv">
+                                <rect key="frame" x="78" y="694" width="219" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="onSave:" destination="Unm-xq-yWQ" eventType="touchUpInside" id="EXO-R9-C7y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3V-gc-aPd">
+                                <rect key="frame" x="213" y="252" width="134" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maintanence Calories: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-pr-Ez3">
+                                <rect key="frame" x="27" y="252" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HJ2-f6-UA8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Macro Calculator" id="sSJ-bX-Wsd">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="IWZ-71-un4">
+                            <connections>
+                                <segue destination="xpY-qg-xvE" kind="show" id="ZFy-Ex-YCE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityControl" destination="Sd5-PE-dP9" id="ABK-v2-Xvm"/>
+                        <outlet property="maintanenceCalsLabel" destination="D3V-gc-aPd" id="332-pB-3Xj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5A-Ys-kds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215.19999999999999" y="1039.6551724137933"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="O1e-nK-BNc">
             <objects>
@@ -292,9 +365,28 @@
             </objects>
             <point key="canvasLocation" x="649" y="323"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tao-m6-JBY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="8ww-jO-BZo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0LU-2V-7F7">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Unm-xq-yWQ" kind="relationship" relationship="rootViewController" id="2a4-CJ-z7l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjg-Zq-Hhz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-980" y="1040"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7yN-eo-QAM"/>
+        <segue reference="1Zu-bm-jmj"/>
+        <segue reference="ZFy-Ex-YCE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Fitness Trainer" width="500" height="500"/>
