@@ -8,7 +8,14 @@
 import UIKit
 
 class DateViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var month: UILabel!
+    
+    @IBOutlet weak var day: UILabel!
+    
+    @IBOutlet weak var year: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

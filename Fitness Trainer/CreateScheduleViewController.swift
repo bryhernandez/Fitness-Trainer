@@ -9,6 +9,21 @@ import UIKit
 
 class CreateScheduleViewController: UIViewController {
 
+    @IBOutlet weak var exercise: UITextField!
+    
+    
+    @IBOutlet weak var reps: UITextField!
+    
+    
+    @IBOutlet weak var sets: UITextField!
+    
+    
+    @IBAction func creation(_ sender: Any) {
+        
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

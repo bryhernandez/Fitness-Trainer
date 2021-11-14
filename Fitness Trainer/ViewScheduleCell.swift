@@ -8,7 +8,12 @@
 import UIKit
 
 class ViewScheduleCell: UITableViewCell {
-
+    
+    @IBOutlet weak var Date: UILabel!
+    
+    @IBOutlet weak var workout: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

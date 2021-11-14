@@ -8,6 +8,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--RingTone-->
+        <scene sceneID="mE9-5s-5Sc">
+            <objects>
+                <viewController id="wf8-P0-3df" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gZO-Ke-6Fh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KqM-6F-vPs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RingTone" id="G5B-Lf-5ey">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="krc-Lq-n87">
+                            <connections>
+                                <segue destination="xpY-qg-xvE" kind="show" id="ldh-9B-vFV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eC4-CI-7FC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-884" y="-406"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -78,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="-396"/>
+            <point key="canvasLocation" x="126" y="-406"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="jmJ-Do-pWs">
@@ -252,6 +274,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create"/>
+                                <connections>
+                                    <action selector="creation:" destination="6B2-GF-aEJ" eventType="touchUpInside" id="J4e-1J-Y4S"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many sets:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAU-1V-yWL">
                                 <rect key="frame" x="27" y="533" width="121" height="21"/>
@@ -287,7 +312,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-Hh-HVG">
-                                                    <rect key="frame" x="127" y="0.0" width="32" height="21"/>
+                                                    <rect key="frame" x="127" y="0.0" width="32" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -295,6 +320,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="day" destination="aZk-Hh-HVG" id="wwf-aj-tIg"/>
+                                            <outlet property="month" destination="T8d-GS-XDu" id="Of0-ZR-Nvh"/>
+                                            <outlet property="year" destination="9PS-g9-sDd" id="HbN-84-TE7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -315,10 +345,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="exercise" destination="R81-F9-yxm" id="ed9-x2-PcA"/>
+                        <outlet property="reps" destination="82Q-Bz-Vrt" id="X9G-PF-GTl"/>
+                        <outlet property="sets" destination="5Bp-Iy-CrP" id="JSV-aD-AhZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJZ-uN-KEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353" y="1054"/>
+            <point key="canvasLocation" x="1352.8" y="1053.6945812807883"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="yGM-EA-jKv">
@@ -351,6 +386,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Set Ringtone"/>
+                                <connections>
+                                    <segue destination="HWH-Ur-dsC" kind="presentation" id="dSn-dz-RmN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-6u-h7R">
                                 <rect key="frame" x="95" y="333" width="184" height="31"/>
@@ -530,7 +568,7 @@
             <objects>
                 <tableViewController id="QCB-l6-1cP" customClass="ViewScheduleTableViewController" customModule="Fitness_Trainer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VeM-N6-81z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -557,6 +595,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Date" destination="ce5-fE-OTS" id="Xxs-k6-58S"/>
+                                    <outlet property="workout" destination="XUf-d2-gxY" id="KIn-vg-xb0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -592,11 +634,28 @@
             </objects>
             <point key="canvasLocation" x="-215" y="1773"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7FH-2G-n4F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HWH-Ur-dsC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nGZ-4d-cTI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wf8-P0-3df" kind="relationship" relationship="rootViewController" id="z9f-C7-a6b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5e-Yc-mfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1740" y="-406"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xYT-wQ-5Ia"/>
-        <segue reference="1Zu-bm-jmj"/>
-        <segue reference="ogG-34-Tls"/>
+        <segue reference="7yN-eo-QAM"/>
+        <segue reference="ldh-9B-vFV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Fitness Trainer" width="500" height="500"/>
