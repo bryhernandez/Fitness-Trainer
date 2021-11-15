@@ -12,6 +12,15 @@ class HomePageViewController: UIViewController {
 
     @IBOutlet weak var macrosButton: UIButton!
     
+    @IBOutlet weak var createPlan: UIButton!
+    
+    
+    @IBOutlet weak var ringTone: UIButton!
+    
+    @IBOutlet weak var viewPlan: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
