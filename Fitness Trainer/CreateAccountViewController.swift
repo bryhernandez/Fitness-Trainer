@@ -32,6 +32,7 @@ class CreateAccountViewController: UIViewController {
         let height:Int? = Int(heightTextField.text!)
         let weight:Int? = Int(weightTextField.text!)
         
+        //checks to make sure that no values are empty when signing up
         while sex != nil && age != nil && height != nil && weight != nil {
             let user = PFUser()
             user.username = usernameTextField.text
@@ -50,25 +51,10 @@ class CreateAccountViewController: UIViewController {
             }
         }
         
+        //if any values are missing, then message prints in the console
         if sex == nil || age == nil || height == nil || weight == nil{
             print("Cannot leave any values empty.")
         }
-        
-//        let user = PFUser()
-//        user.username = usernameTextField.text
-//        user.password = passwordTextField.text
-//        user["Sex"] = sex
-//        user["Age"] = age
-//        user["Height"] = height
-//        user["Weight"] = weight
-//
-//        user.signUpInBackground { (success, error) in
-//            if success{
-//                self.performSegue(withIdentifier: "successfulSignupSegue", sender: nil)
-//            } else {
-//                print("Error: \(error?.localizedDescription)")
-//            }
-//        }
         
     }
     /*
