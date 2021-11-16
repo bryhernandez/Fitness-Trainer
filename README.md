@@ -27,21 +27,21 @@ A calendar type app that will keep track of your workouts for the week. It works
 
 * - [x] Create a "Login"
 * - [x] Create a "Create Account"
-* Schedule: Show your schedule that you have already created for yourself
-    * Ability to modify or delete
-    * Button for redirecting to main
-* Create: Create the schedule for the day/week
-    * Add sets/reps
-    * Add excercise
-    * Button for redirecting to main
+* - [x] Check Macros
+* - [ ] Schedule: Show your schedule that you have already created for yourself
+    * - [ ] Ability to modify or delete
+    * - [x] Button for redirecting to main
+* - [ ] Create: Create the schedule for the day/week
+    * - [ ] Add sets/reps
+    * - [ ] Add excercise
+    * - [x] Button for redirecting to main
     
 
 **Optional Nice-to-have Stories**
 
-* Notification if you hit a PR
-* Ringtone: Notify your workout for the day with a nice tune, it can be your personal record song
-* Add a timer for in between sets; resting period
-* Calorie Checker
+* - [ ] Notification if you hit a PR
+* - [ ] Ringtone: Notify your workout for the day with a nice tune, it can be your personal record song
+* - [ ] Add a timer for in between sets; resting period
 
 
 
@@ -63,14 +63,6 @@ A calendar type app that will keep track of your workouts for the week. It works
 * Schedule
 * Workouts
 
-**Flow Navigation** (Screen to Screen)
-
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
 
 ## Wireframes
 <img src="https://i.imgur.com/VD9J5qx.jpg" width=600>
@@ -103,5 +95,10 @@ A calendar type app that will keep track of your workouts for the week. It works
       - (Delete) User deletes workout
       - (Update) User adds workout
 
+### Progress for week 2 of project
 
-![](https://i.imgur.com/M8pzZRi.gif)
+<img src="https://i.imgur.com/M8pzZRi.gif" width=200>
+
+### Progress for week 3 of project
+
+<img src="https://user-images.githubusercontent.com/61296527/141886555-3beee9da-f9ed-4d42-8c21-be10f41641a3.gif" width=200>
