@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="wf8-P0-3df" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gZO-Ke-6Fh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="KqM-6F-vPs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -28,7 +28,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eC4-CI-7FC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-884" y="-406"/>
+            <point key="canvasLocation" x="126" y="300"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -226,14 +226,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Asb-oH-tir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353" y="323"/>
+            <point key="canvasLocation" x="-767" y="-406"/>
         </scene>
         <!--Create Schedule-->
         <scene sceneID="nbx-N3-eyJ">
             <objects>
                 <viewController id="6B2-GF-aEJ" customClass="CreateScheduleViewController" customModule="Fitness_Trainer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qaE-wd-94j">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-Lq-wgV">
@@ -353,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJZ-uN-KEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352.8" y="1053.6945812807883"/>
+            <point key="canvasLocation" x="3583" y="300"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="yGM-EA-jKv">
@@ -419,7 +419,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDY-bg-AX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255.19999999999999" y="322.90640394088672"/>
+            <point key="canvasLocation" x="1802" y="-406"/>
         </scene>
         <!--Macro Calculator-->
         <scene sceneID="go6-cP-U05">
@@ -488,7 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5A-Ys-kds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215.19999999999999" y="1039.6551724137933"/>
+            <point key="canvasLocation" x="1801" y="300"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O1e-nK-BNc">
@@ -506,7 +506,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYJ-Zd-cXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-980" y="323"/>
+            <point key="canvasLocation" x="1087" y="-406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ix9-ZH-g8D">
@@ -524,7 +524,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4C-Pg-wso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="323"/>
+            <point key="canvasLocation" x="-1455" y="-406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tao-m6-JBY">
@@ -542,16 +542,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjg-Zq-Hhz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-980" y="1040"/>
+            <point key="canvasLocation" x="1086" y="300"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7d6-2C-EeG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MJL-YC-szy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="MJL-YC-szy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="blH-mz-fAz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9ve-Gj-pmt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -561,14 +561,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgm-Dy-fno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="1054"/>
+            <point key="canvasLocation" x="2860" y="300"/>
         </scene>
         <!--Your Schedule-->
         <scene sceneID="RjD-35-gFC">
             <objects>
                 <tableViewController id="QCB-l6-1cP" customClass="ViewScheduleTableViewController" customModule="Fitness_Trainer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VeM-N6-81z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -616,14 +616,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmV-rt-AEP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648.79999999999995" y="1772.6600985221676"/>
+            <point key="canvasLocation" x="-1630" y="300"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GsG-ue-hua">
             <objects>
-                <navigationController id="2wv-sM-w4X" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="2wv-sM-w4X" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NU1-ws-TOE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -632,15 +632,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Eo-aj-Wa7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215" y="1773"/>
+            <point key="canvasLocation" x="-2358" y="300"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7FH-2G-n4F">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HWH-Ur-dsC" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="HWH-Ur-dsC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nGZ-4d-cTI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -650,11 +650,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5e-Yc-mfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1740" y="-406"/>
+            <point key="canvasLocation" x="-628" y="300"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7yN-eo-QAM"/>
+        <segue reference="z9f-C7-a6b"/>
+        <segue reference="1Zu-bm-jmj"/>
         <segue reference="ldh-9B-vFV"/>
     </inferredMetricsTieBreakers>
     <resources>
