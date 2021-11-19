@@ -44,7 +44,7 @@ class CreateScheduleViewController: UIViewController {
         
         fit.saveInBackground { success, error in
         if success {
-            print("Workout had been saved.")
+            self.performSegue(withIdentifier: "BackToHome", sender: nil)
         } else {
             print("Failed to save workout")
         }
