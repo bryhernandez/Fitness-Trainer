@@ -33,7 +33,7 @@ class CreateAccountViewController: UIViewController {
         let weight:Int? = Int(weightTextField.text!)
         
         //checks to make sure that no values are empty when signing up
-        while sex != nil && age != nil && height != nil && weight != nil {
+        if sex != nil && age != nil && height != nil && weight != nil {
             let user = PFUser()
             user.username = usernameTextField.text
             user.password = passwordTextField.text

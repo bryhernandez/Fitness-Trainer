@@ -10,12 +10,11 @@ import UIKit
 class CreateScheduleViewController: UIViewController {
 
     @IBOutlet weak var exercise: UITextField!
-    
-    
     @IBOutlet weak var reps: UITextField!
-    
-    
     @IBOutlet weak var sets: UITextField!
+    @IBOutlet weak var monthText: UITextField!
+    @IBOutlet weak var dayText: UITextField!
+    @IBOutlet weak var yearText: UITextField!
     
     
     @IBAction func creation(_ sender: Any) {

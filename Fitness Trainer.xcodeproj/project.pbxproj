@@ -11,7 +11,6 @@
 		554B20022741B4E3009DDA9C /* CreateScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B20012741B4E3009DDA9C /* CreateScheduleViewController.swift */; };
 		55F760B42741C5B900BEAB8E /* ViewScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F760B32741C5B900BEAB8E /* ViewScheduleTableViewController.swift */; };
 		55F760B62741C7E800BEAB8E /* ViewScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F760B52741C7E800BEAB8E /* ViewScheduleCell.swift */; };
-		55F760B82741C85D00BEAB8E /* DateViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F760B72741C85D00BEAB8E /* DateViewCell.swift */; };
 		7CFB1D49BF5EF16A0B9DC62C /* Pods_Fitness_Trainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E6AA79000C36BD416236C1 /* Pods_Fitness_Trainer.framework */; };
 		87AB96CA49B0FB3D853C705E /* Pods_Fitness_TrainerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB60C30C99C0AEEB50906AFF /* Pods_Fitness_TrainerTests.framework */; };
 		DE2205DC2727184D00499F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2205DB2727184D00499F02 /* AppDelegate.swift */; };
@@ -50,7 +49,6 @@
 		554B20012741B4E3009DDA9C /* CreateScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScheduleViewController.swift; sourceTree = "<group>"; };
 		55F760B32741C5B900BEAB8E /* ViewScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScheduleTableViewController.swift; sourceTree = "<group>"; };
 		55F760B52741C7E800BEAB8E /* ViewScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScheduleCell.swift; sourceTree = "<group>"; };
-		55F760B72741C85D00BEAB8E /* DateViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewCell.swift; sourceTree = "<group>"; };
 		5B75948DD479760D9B390BAC /* Pods-Fitness Trainer-Fitness TrainerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness Trainer-Fitness TrainerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fitness Trainer-Fitness TrainerUITests/Pods-Fitness Trainer-Fitness TrainerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A054C52532E067E72BCFCE9 /* Pods-Fitness Trainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness Trainer.debug.xcconfig"; path = "Target Support Files/Pods-Fitness Trainer/Pods-Fitness Trainer.debug.xcconfig"; sourceTree = "<group>"; };
 		98D993BDE3C748EB732644BB /* Pods-Fitness Trainer-Fitness TrainerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness Trainer-Fitness TrainerUITests.release.xcconfig"; path = "Target Support Files/Pods-Fitness Trainer-Fitness TrainerUITests/Pods-Fitness Trainer-Fitness TrainerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				554B20012741B4E3009DDA9C /* CreateScheduleViewController.swift */,
 				55F760B32741C5B900BEAB8E /* ViewScheduleTableViewController.swift */,
 				55F760B52741C7E800BEAB8E /* ViewScheduleCell.swift */,
-				55F760B72741C85D00BEAB8E /* DateViewCell.swift */,
 			);
 			path = "Fitness Trainer";
 			sourceTree = "<group>";
@@ -432,7 +429,6 @@
 			files = (
 				DEED3CC62740727D00930C38 /* CreateAccountViewController.swift in Sources */,
 				554B20022741B4E3009DDA9C /* CreateScheduleViewController.swift in Sources */,
-				55F760B82741C85D00BEAB8E /* DateViewCell.swift in Sources */,
 				DE4A9EFD2738DF6600C2ADFC /* LoginViewController.swift in Sources */,
 				DE456B1527416BC600A1B2AC /* MacroCalcViewController.swift in Sources */,
 				DE2205E62727184D00499F02 /* Fitness_Trainer.xcdatamodeld in Sources */,
