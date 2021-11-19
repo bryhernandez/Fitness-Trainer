@@ -316,7 +316,7 @@
                     <navigationItem key="navigationItem" title="Create Schedule" id="Inn-4N-lRK">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="HdQ-Gy-6yz">
                             <connections>
-                                <segue destination="xpY-qg-xvE" kind="show" id="0t4-x3-WVq"/>
+                                <segue destination="xpY-qg-xvE" kind="show" identifier="BackToHome" id="0t4-x3-WVq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
