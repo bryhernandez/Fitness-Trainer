@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class CreateScheduleViewController: UIViewController {
 
@@ -18,7 +19,13 @@ class CreateScheduleViewController: UIViewController {
     
     
     @IBAction func creation(_ sender: Any) {
-        
+        let month = monthText.text! as String
+        let day = dayText.text! as String
+        let year = yearText.text! as String
+
+        let str = month + day + year
+
+        let date:Any = Int(str) as! Int
         
     }
     
