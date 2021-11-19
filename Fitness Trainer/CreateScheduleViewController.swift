@@ -19,14 +19,31 @@ class CreateScheduleViewController: UIViewController {
     
     
     @IBAction func creation(_ sender: Any) {
-        let month = monthText.text! as String?
-        let day = dayText.text! as String?
-        let year = yearText.text! as String?
-
-//        let str = month + day + year
-
-//        let date:Any = Int(str)!
+    
+        let month = monthText.text!
+        let day = dayText.text!
+        let year = yearText.text!
+        let date = month + "/" + day + "/" + year
         
+        let reps:Int? = Int(reps.text!)
+        let sets:Int? = Int(sets.text!)
+        let exercise:Int? = Int(exercise.text!)
+        
+        let fit = PFObject(className: "Workouts")
+
+        fit["User"] = PFUser.current()!
+        fit["Reps"] = reps
+        fit["Sets"] = sets
+        fit["Name"] = exercise
+        fit["Date"] = date
+        
+        fit.saveInBackground { success, error in
+        if success {
+            print("Comment has been saved!")
+            } else {
+                print("Failed to save comment.")
+            }
+        }
     }
     
     
