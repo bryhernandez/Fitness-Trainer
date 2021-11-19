@@ -26,6 +26,7 @@
 		DE456B1527416BC600A1B2AC /* MacroCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE456B1427416BC600A1B2AC /* MacroCalcViewController.swift */; };
 		DE4A9EFD2738DF6600C2ADFC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */; };
 		DEED3CC62740727D00930C38 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED3CC52740727D00930C38 /* CreateAccountViewController.swift */; };
+		DEEF803227482193000F4E45 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF803127482193000F4E45 /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		DE456B1427416BC600A1B2AC /* MacroCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroCalcViewController.swift; sourceTree = "<group>"; };
 		DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DEED3CC52740727D00930C38 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		DEEF803127482193000F4E45 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		E3768584F106A6656CB1895E /* Pods-Fitness TrainerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness TrainerTests.debug.xcconfig"; path = "Target Support Files/Pods-Fitness TrainerTests/Pods-Fitness TrainerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 				554B20012741B4E3009DDA9C /* CreateScheduleViewController.swift */,
 				55F760B32741C5B900BEAB8E /* ViewScheduleTableViewController.swift */,
 				55F760B52741C7E800BEAB8E /* ViewScheduleCell.swift */,
+				DEEF803127482193000F4E45 /* EditProfileViewController.swift */,
 			);
 			path = "Fitness Trainer";
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEF803227482193000F4E45 /* EditProfileViewController.swift in Sources */,
 				DEED3CC62740727D00930C38 /* CreateAccountViewController.swift in Sources */,
 				554B20022741B4E3009DDA9C /* CreateScheduleViewController.swift in Sources */,
 				DE4A9EFD2738DF6600C2ADFC /* LoginViewController.swift in Sources */,

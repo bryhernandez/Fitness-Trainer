@@ -21,7 +21,7 @@
                     <navigationItem key="navigationItem" title="RingTone" id="G5B-Lf-5ey">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="krc-Lq-n87">
                             <connections>
-                                <segue destination="xpY-qg-xvE" kind="show" id="ldh-9B-vFV"/>
+                                <segue destination="OD5-Zb-5Sj" kind="presentation" id="xoA-CR-TFc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -95,7 +95,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="cBj-bQ-B7o" id="DA8-8m-xZC"/>
                         <outlet property="usernameTextField" destination="Nn3-o5-Wc2" id="QuL-g6-2eA"/>
-                        <segue destination="tK7-VT-JNo" kind="presentation" identifier="loginSegue" id="7yN-eo-QAM"/>
+                        <segue destination="OD5-Zb-5Sj" kind="presentation" identifier="loginSegue" id="kte-qE-L5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -316,7 +316,7 @@
                     <navigationItem key="navigationItem" title="Create Schedule" id="Inn-4N-lRK">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="HdQ-Gy-6yz">
                             <connections>
-                                <segue destination="xpY-qg-xvE" kind="show" identifier="BackToHome" id="0t4-x3-WVq"/>
+                                <segue destination="OD5-Zb-5Sj" kind="presentation" identifier="BackToHome" id="tLw-kT-2kh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -333,7 +333,7 @@
             </objects>
             <point key="canvasLocation" x="3581.5999999999999" y="300"/>
         </scene>
-        <!--Home Page View Controller-->
+        <!--Home-->
         <scene sceneID="yGM-EA-jKv">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="xpY-qg-xvE" customClass="HomePageViewController" customModule="Fitness_Trainer" customModuleProvider="target" sceneMemberID="viewController">
@@ -381,7 +381,7 @@
                         <viewLayoutGuide key="safeArea" id="4as-oz-Lrw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XjJ-VK-bpi">
+                    <navigationItem key="navigationItem" title="Home" id="XjJ-VK-bpi">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="SYJ-db-BoG">
                             <connections>
                                 <action selector="onLogout:" destination="xpY-qg-xvE" id="TCJ-5q-hIo"/>
@@ -398,6 +398,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDY-bg-AX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1802" y="-406"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="FgH-Mg-EkX">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileViewController" id="efI-aW-xZZ" customClass="EditProfileViewController" customModule="Fitness_Trainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y5s-61-8SF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7hE-dP-5oG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="HVm-Ts-LJL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBS-MX-MYi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3582" y="-395"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="R4P-Xh-OST">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKP-3J-1He" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="TabBarNavigation" modalPresentationStyle="fullScreen" id="OD5-Zb-5Sj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wBe-MP-86Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tK7-VT-JNo" kind="relationship" relationship="viewControllers" id="7Et-9R-e83"/>
+                        <segue destination="b8f-eY-Lfx" kind="relationship" relationship="viewControllers" id="WGS-s5-Y6Y"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="2351" y="-1255"/>
         </scene>
         <!--Macro Calculator-->
         <scene sceneID="go6-cP-U05">
@@ -455,7 +489,7 @@
                     <navigationItem key="navigationItem" title="Macro Calculator" id="sSJ-bX-Wsd">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="IWZ-71-un4">
                             <connections>
-                                <segue destination="xpY-qg-xvE" kind="show" id="ZFy-Ex-YCE"/>
+                                <segue destination="OD5-Zb-5Sj" kind="presentation" identifier="Home" id="JN2-C9-gvZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -468,10 +502,11 @@
             </objects>
             <point key="canvasLocation" x="1801" y="300"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="O1e-nK-BNc">
             <objects>
                 <navigationController storyboardIdentifier="HomePageNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="tK7-VT-JNo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="dHV-qp-xrQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="feh-dt-ag5">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -587,7 +622,7 @@
                     <navigationItem key="navigationItem" title="Your Schedule" id="vAe-88-aXb">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="aOe-cl-CtQ">
                             <connections>
-                                <segue destination="xpY-qg-xvE" kind="show" id="ogG-34-Tls"/>
+                                <segue destination="OD5-Zb-5Sj" kind="presentation" id="ZcA-HK-qwr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -630,13 +665,35 @@
             </objects>
             <point key="canvasLocation" x="-628" y="300"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="7YV-t4-jeV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b8f-eY-Lfx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="brain.head.profile" catalog="system" id="0a0-KE-ebc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jPn-Fn-PP7">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="efI-aW-xZZ" kind="relationship" relationship="rootViewController" id="22V-ji-V6S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8CX-1h-rsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2888.8000000000002" y="-394.58128078817737"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Zu-bm-jmj"/>
-        <segue reference="0t4-x3-WVq"/>
+        <segue reference="ul7-h3-ah5"/>
+        <segue reference="7Et-9R-e83"/>
+        <segue reference="tLw-kT-2kh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Fitness Trainer" width="500" height="500"/>
+        <image name="brain.head.profile" catalog="system" width="114" height="128"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
