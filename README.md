@@ -31,9 +31,9 @@ A calendar type app that will keep track of your workouts for the week. It works
 * - [ ] Schedule: Show your schedule that you have already created for yourself
     * - [ ] Ability to modify or delete
     * - [x] Button for redirecting to main
-* - [ ] Create: Create the schedule for the day/week
-    * - [ ] Add sets/reps
-    * - [ ] Add excercise
+* - [x] Create: Create the schedule for the day/week
+    * - [x] Add sets/reps
+    * - [x] Add excercise
     * - [x] Button for redirecting to main
     
 
