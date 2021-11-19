@@ -20,14 +20,19 @@ class CreateScheduleViewController: UIViewController {
     
     @IBAction func creation(_ sender: Any) {
     
-        let month = monthText.text!
-        let day = dayText.text!
-        let year = yearText.text!
-        let date = month + "/" + day + "/" + year
+        let month = monthText.text as String?
+        let day = dayText.text as String?
+        let year = yearText.text as String?
+        let date = month! + "/" + day! + "/" + year!
         
         let reps:Int? = Int(reps.text!)
         let sets:Int? = Int(sets.text!)
-        let exercise:Int? = Int(exercise.text!)
+        let exercise = exercise.text as String?
+        
+        print(date)
+        print(reps)
+        print(sets)
+        print(exercise)
         
         let fit = PFObject(className: "Workouts")
 
@@ -39,10 +44,10 @@ class CreateScheduleViewController: UIViewController {
         
         fit.saveInBackground { success, error in
         if success {
-            print("Comment has been saved!")
-            } else {
-                print("Failed to save comment.")
-            }
+            print("Workout had been saved.")
+        } else {
+            print("Failed to save workout")
+        }
         }
     }
     
