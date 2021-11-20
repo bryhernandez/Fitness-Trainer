@@ -21,7 +21,23 @@ class CreateAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let toolBar = UIToolbar() //this adds a toolbar to the keyboards to allow users to exit the keyboard
+        toolBar.sizeToFit()
+        
+        let doneButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(self.doneClicked))
+        
+        toolBar.setItems([doneButton], animated: false)
+        
+        usernameTextField.inputAccessoryView = toolBar
+        passwordTextField.inputAccessoryView = toolBar
+        ageTextField.inputAccessoryView = toolBar
+        sexTextField.inputAccessoryView = toolBar
+        heightTextField.inputAccessoryView = toolBar
+        weightTextField.inputAccessoryView = toolBar
+    }
+    
+    @objc func doneClicked(){
+        view.endEditing(true)
     }
     
 

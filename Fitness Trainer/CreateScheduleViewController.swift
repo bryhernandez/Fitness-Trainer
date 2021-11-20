@@ -43,11 +43,11 @@ class CreateScheduleViewController: UIViewController {
         fit["Date"] = date
         
         fit.saveInBackground { success, error in
-        if success {
-            self.performSegue(withIdentifier: "BackToHome", sender: nil)
-        } else {
-            print("Failed to save workout")
-        }
+            if success {
+                self.performSegue(withIdentifier: "BackToHome", sender: nil)
+            } else {
+                print("Failed to save workout")
+            }
         }
     }
     
@@ -55,7 +55,23 @@ class CreateScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let toolBar = UIToolbar() //this adds a toolbar to the keyboards to allow users to exit the keyboard
+        toolBar.sizeToFit()
+        
+        let doneButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(self.doneClicked))
+        
+        toolBar.setItems([doneButton], animated: false)
+        
+        exercise.inputAccessoryView = toolBar
+        reps.inputAccessoryView = toolBar
+        sets.inputAccessoryView = toolBar
+        monthText.inputAccessoryView = toolBar
+        dayText.inputAccessoryView = toolBar
+        yearText.inputAccessoryView = toolBar
+    }
+    
+    @objc func doneClicked(){
+        view.endEditing(true)
     }
     
 
