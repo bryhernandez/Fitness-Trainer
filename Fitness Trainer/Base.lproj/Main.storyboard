@@ -221,7 +221,7 @@
                         <outlet property="sexTextField" destination="vxE-G1-ynN" id="W8C-jZ-l7j"/>
                         <outlet property="usernameTextField" destination="BZt-Vk-T5l" id="JfW-st-RG1"/>
                         <outlet property="weightTextField" destination="33M-VZ-ZQ3" id="sfK-dD-dFa"/>
-                        <segue destination="tK7-VT-JNo" kind="presentation" identifier="successfulSignupSegue" id="1Zu-bm-jmj"/>
+                        <segue destination="OD5-Zb-5Sj" kind="presentation" identifier="successfulSignupSegue" id="1YP-fH-mig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Asb-oH-tir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -470,6 +470,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Edit"/>
                                 <connections>
                                     <action selector="onEdit:" destination="efI-aW-xZZ" eventType="touchUpInside" id="RT9-ay-DD5"/>
+                                    <segue destination="EHZ-X6-DS6" kind="presentation" id="Acw-4c-dth"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -487,6 +488,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBS-MX-MYi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3583" y="295"/>
+        </scene>
+        <!--Edit Profile-->
+        <scene sceneID="Hq6-W1-bRQ">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileTooViewController" id="efw-sm-M0R" customClass="EditProfileTooViewController" customModule="Fitness_Trainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gM-w4-4sE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONf-ac-8vj">
+                                <rect key="frame" x="16" y="91" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Height: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypb-nB-c99">
+                                <rect key="frame" x="16" y="175" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4PN-Ea-MkM">
+                                <rect key="frame" x="173" y="84" width="186" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G83-Xf-biD">
+                                <rect key="frame" x="173" y="126" width="186" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="In Inches" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9aB-17-FcU">
+                                <rect key="frame" x="173" y="168" width="186" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="In lbs" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XY7-0u-qFU">
+                                <rect key="frame" x="173" y="210" width="186" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6n-5j-aRD">
+                                <rect key="frame" x="108" y="331" width="160" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="onSave:" destination="efw-sm-M0R" eventType="touchUpInside" id="D5f-iV-xMC"/>
+                                    <segue destination="OD5-Zb-5Sj" kind="presentation" identifier="backToEdit" id="q4B-YV-GZz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btC-zY-tfy">
+                                <rect key="frame" x="16" y="133" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdM-4D-RM8">
+                                <rect key="frame" x="16" y="217" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jdr-3B-KbL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Profile" id="O7s-BH-moC"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="G83-Xf-biD" id="9iu-Uu-nPv"/>
+                        <outlet property="heightTextField" destination="9aB-17-FcU" id="EDn-ek-Isx"/>
+                        <outlet property="usernameTextField" destination="4PN-Ea-MkM" id="eFV-Ue-RxK"/>
+                        <outlet property="weightTextField" destination="XY7-0u-qFU" id="zmM-8c-nwz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9I3-gN-Cra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5384.8000000000002" y="294.82758620689657"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="R4P-Xh-OST">
@@ -741,7 +828,7 @@
         <!--Profile-->
         <scene sceneID="7YV-t4-jeV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b8f-eY-Lfx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="b8f-eY-Lfx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="brain.head.profile" catalog="system" id="0a0-KE-ebc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jPn-Fn-PP7">
@@ -757,10 +844,27 @@
             </objects>
             <point key="canvasLocation" x="2916" y="295"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4zb-EV-6nn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EHZ-X6-DS6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xfd-hT-9r3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="efw-sm-M0R" kind="relationship" relationship="rootViewController" id="IW4-Q4-PXU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qsM-aT-rle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4690" y="295"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Zu-bm-jmj"/>
-        <segue reference="tLw-kT-2kh"/>
+        <segue reference="1YP-fH-mig"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Fitness Trainer" width="500" height="500"/>

@@ -13,6 +13,7 @@
 		55F760B62741C7E800BEAB8E /* ViewScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F760B52741C7E800BEAB8E /* ViewScheduleCell.swift */; };
 		7CFB1D49BF5EF16A0B9DC62C /* Pods_Fitness_Trainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E6AA79000C36BD416236C1 /* Pods_Fitness_Trainer.framework */; };
 		87AB96CA49B0FB3D853C705E /* Pods_Fitness_TrainerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB60C30C99C0AEEB50906AFF /* Pods_Fitness_TrainerTests.framework */; };
+		DE107B522749669E003CC539 /* EditProfileTooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE107B512749669E003CC539 /* EditProfileTooViewController.swift */; };
 		DE2205DC2727184D00499F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2205DB2727184D00499F02 /* AppDelegate.swift */; };
 		DE2205DE2727184D00499F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2205DD2727184D00499F02 /* SceneDelegate.swift */; };
 		DE2205E32727184D00499F02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2205E12727184D00499F02 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		C26620818C1E8EB4A8AE7F5C /* Pods_Fitness_Trainer_Fitness_TrainerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitness_Trainer_Fitness_TrainerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E6AA79000C36BD416236C1 /* Pods_Fitness_Trainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitness_Trainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB60C30C99C0AEEB50906AFF /* Pods_Fitness_TrainerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitness_TrainerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE107B512749669E003CC539 /* EditProfileTooViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTooViewController.swift; sourceTree = "<group>"; };
 		DE2205D82727184D00499F02 /* Fitness Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2205DB2727184D00499F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE2205DD2727184D00499F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				55F760B32741C5B900BEAB8E /* ViewScheduleTableViewController.swift */,
 				55F760B52741C7E800BEAB8E /* ViewScheduleCell.swift */,
 				DEEF803127482193000F4E45 /* EditProfileViewController.swift */,
+				DE107B512749669E003CC539 /* EditProfileTooViewController.swift */,
 			);
 			path = "Fitness Trainer";
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				55F760B62741C7E800BEAB8E /* ViewScheduleCell.swift in Sources */,
 				55F760B42741C5B900BEAB8E /* ViewScheduleTableViewController.swift in Sources */,
 				DE2205DC2727184D00499F02 /* AppDelegate.swift in Sources */,
+				DE107B522749669E003CC539 /* EditProfileTooViewController.swift in Sources */,
 				DE30E8E2273E28C000791E8D /* HomePageViewController.swift in Sources */,
 				DE2205DE2727184D00499F02 /* SceneDelegate.swift in Sources */,
 			);
