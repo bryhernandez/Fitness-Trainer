@@ -28,9 +28,9 @@ A calendar type app that will keep track of your workouts for the week. It works
 * - [x] Create a "Login"
 * - [x] Create a "Create Account"
 * - [x] Check Macros
-* - [ ] Edit Profile
+* - [x] Edit Profile
    * - [x] Ability to see current User information
-   * - [ ] Ability to edit user information
+   * - [x] Ability to edit user information
 * - [ ] Schedule: Show your schedule that you have already created for yourself
     * - [ ] Ability to modify or delete
     * - [x] Button for redirecting to main
@@ -107,4 +107,9 @@ A calendar type app that will keep track of your workouts for the week. It works
 ### Progress for week 4 of project
 
 <img src="https://user-images.githubusercontent.com/44891178/142569710-dd541fe3-366e-43dc-ad89-2d507b484555.gif" width=200>
+
+### Progress for week 5 of project
+
+<img src="https://user-images.githubusercontent.com/61296527/142955136-ec58ca09-075c-4322-a4af-bd857da06bc8.gif" width=200>
+
 
