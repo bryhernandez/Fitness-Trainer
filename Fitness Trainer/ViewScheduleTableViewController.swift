@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Parse
 
 class ViewScheduleTableViewController: UITableViewController {
-
+    var plan = [PFObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,10 +21,23 @@ class ViewScheduleTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ViewScheduleCell", for: indexPath) as! ViewScheduleCell
+       
+        let the_plan = plan[indexPath.row]
+        
+        cell.workout.text = the_plan["Name"] as? String
+        
+        cell.Date.text = "something"
+        cell.workout.text = "sex"
+        //cell.sets.text = "ass"
+        cell.reps.text = "anal"
+        
+        return cell
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

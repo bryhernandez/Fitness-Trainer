@@ -745,31 +745,69 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="Ij9-9y-Een" customClass="ViewScheduleCell" customModule="Fitness_Trainer" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="92"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViewScheduleCell" rowHeight="275" id="Ij9-9y-Een" customClass="ViewScheduleCell" customModule="Fitness_Trainer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="275"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ij9-9y-Een" id="xER-Zo-esK">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce5-fE-OTS">
-                                            <rect key="frame" x="16" y="11" width="131" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce5-fE-OTS">
+                                            <rect key="frame" x="16" y="0.0" width="231" height="39"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="39" id="Av9-BC-Aup"/>
+                                                <constraint firstAttribute="width" constant="231" id="RQs-g1-lnu"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUf-d2-gxY">
-                                            <rect key="frame" x="72" y="35" width="211" height="57"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUf-d2-gxY">
+                                            <rect key="frame" x="16" y="47" width="231" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="FQB-6N-Pq9"/>
+                                                <constraint firstAttribute="width" constant="231" id="jKm-aD-8ee"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vK-aG-30k">
+                                            <rect key="frame" x="16" y="97" width="231" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="3pt-ld-c5C"/>
+                                                <constraint firstAttribute="width" constant="231" id="8gO-oT-8bI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnO-gZ-VD7">
+                                            <rect key="frame" x="16" y="141" width="231" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="231" id="3EH-rA-Tkr"/>
+                                                <constraint firstAttribute="height" constant="44" id="EQP-Le-qGs"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5vK-aG-30k" firstAttribute="leading" secondItem="XUf-d2-gxY" secondAttribute="leading" id="6gQ-hi-UDH"/>
+                                        <constraint firstItem="5vK-aG-30k" firstAttribute="top" secondItem="XUf-d2-gxY" secondAttribute="bottom" constant="8" symbolic="YES" id="A3y-Kt-ugH"/>
+                                        <constraint firstItem="5vK-aG-30k" firstAttribute="top" secondItem="xER-Zo-esK" secondAttribute="top" constant="97" id="C9w-Jh-4oq"/>
+                                        <constraint firstItem="XUf-d2-gxY" firstAttribute="top" secondItem="ce5-fE-OTS" secondAttribute="bottom" constant="8" symbolic="YES" id="DlP-du-MKP"/>
+                                        <constraint firstItem="5vK-aG-30k" firstAttribute="leading" secondItem="TnO-gZ-VD7" secondAttribute="leading" id="TeD-ys-ASM"/>
+                                        <constraint firstItem="5vK-aG-30k" firstAttribute="leading" secondItem="ce5-fE-OTS" secondAttribute="leading" id="TzW-LZ-adK"/>
+                                        <constraint firstItem="TnO-gZ-VD7" firstAttribute="top" secondItem="5vK-aG-30k" secondAttribute="bottom" constant="8" symbolic="YES" id="UN3-gL-W8p"/>
+                                        <constraint firstItem="5vK-aG-30k" firstAttribute="leading" secondItem="xER-Zo-esK" secondAttribute="leadingMargin" id="Vc3-sN-Uf1"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="Date" destination="ce5-fE-OTS" id="Xxs-k6-58S"/>
+                                    <outlet property="reps" destination="TnO-gZ-VD7" id="Xc4-rx-GYp"/>
+                                    <outlet property="sets" destination="5vK-aG-30k" id="yD6-jj-deT"/>
                                     <outlet property="workout" destination="XUf-d2-gxY" id="KIn-vg-xb0"/>
                                 </connections>
                             </tableViewCell>
@@ -789,7 +827,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmV-rt-AEP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-938" y="1012"/>
+            <point key="canvasLocation" x="-938.39999999999998" y="1011.576354679803"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GsG-ue-hua">
@@ -864,7 +902,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1YP-fH-mig"/>
+        <segue reference="ZcA-HK-qwr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Fitness Trainer" width="500" height="500"/>

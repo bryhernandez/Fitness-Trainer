@@ -13,6 +13,10 @@ class ViewScheduleCell: UITableViewCell {
     
     @IBOutlet weak var workout: UILabel!
     
+    @IBOutlet weak var sets: UILabel!
+    
+    @IBOutlet weak var reps: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
