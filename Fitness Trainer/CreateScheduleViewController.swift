@@ -37,6 +37,7 @@ class CreateScheduleViewController: UIViewController {
         let fit = PFObject(className: "Workouts")
 
         fit["User"] = PFUser.current()!
+        fit["username"] = PFUser.current()?.username
         fit["Reps"] = reps
         fit["Sets"] = sets
         fit["Name"] = exercise

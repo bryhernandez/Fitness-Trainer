@@ -9,14 +9,10 @@ import UIKit
 
 class ViewScheduleCell: UITableViewCell {
     
-    @IBOutlet weak var Date: UILabel!
-    
-    @IBOutlet weak var workout: UILabel!
-    
-    @IBOutlet weak var sets: UILabel!
-    
-    @IBOutlet weak var reps: UILabel!
-    
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var workoutLabel: UILabel!
+    @IBOutlet weak var setsLabel: UILabel!
+    @IBOutlet weak var repsLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

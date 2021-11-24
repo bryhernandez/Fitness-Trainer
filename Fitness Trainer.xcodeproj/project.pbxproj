@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		26536F50F4F828B123EFA7DC /* Pods_Fitness_Trainer_Fitness_TrainerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26620818C1E8EB4A8AE7F5C /* Pods_Fitness_Trainer_Fitness_TrainerUITests.framework */; };
 		554B20022741B4E3009DDA9C /* CreateScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B20012741B4E3009DDA9C /* CreateScheduleViewController.swift */; };
-		55F760B42741C5B900BEAB8E /* ViewScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F760B32741C5B900BEAB8E /* ViewScheduleTableViewController.swift */; };
 		55F760B62741C7E800BEAB8E /* ViewScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F760B52741C7E800BEAB8E /* ViewScheduleCell.swift */; };
 		7CFB1D49BF5EF16A0B9DC62C /* Pods_Fitness_Trainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E6AA79000C36BD416236C1 /* Pods_Fitness_Trainer.framework */; };
 		87AB96CA49B0FB3D853C705E /* Pods_Fitness_TrainerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB60C30C99C0AEEB50906AFF /* Pods_Fitness_TrainerTests.framework */; };
@@ -26,6 +25,7 @@
 		DE30E8E2273E28C000791E8D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE30E8E1273E28C000791E8D /* HomePageViewController.swift */; };
 		DE456B1527416BC600A1B2AC /* MacroCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE456B1427416BC600A1B2AC /* MacroCalcViewController.swift */; };
 		DE4A9EFD2738DF6600C2ADFC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */; };
+		DEBE565E274DC8B6009ED36D /* ViewScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE565D274DC8B6009ED36D /* ViewScheduleTableViewController.swift */; };
 		DEED3CC62740727D00930C38 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED3CC52740727D00930C38 /* CreateAccountViewController.swift */; };
 		DEEF803227482193000F4E45 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF803127482193000F4E45 /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +49,6 @@
 
 /* Begin PBXFileReference section */
 		554B20012741B4E3009DDA9C /* CreateScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScheduleViewController.swift; sourceTree = "<group>"; };
-		55F760B32741C5B900BEAB8E /* ViewScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScheduleTableViewController.swift; sourceTree = "<group>"; };
 		55F760B52741C7E800BEAB8E /* ViewScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScheduleCell.swift; sourceTree = "<group>"; };
 		5B75948DD479760D9B390BAC /* Pods-Fitness Trainer-Fitness TrainerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness Trainer-Fitness TrainerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fitness Trainer-Fitness TrainerUITests/Pods-Fitness Trainer-Fitness TrainerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A054C52532E067E72BCFCE9 /* Pods-Fitness Trainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness Trainer.debug.xcconfig"; path = "Target Support Files/Pods-Fitness Trainer/Pods-Fitness Trainer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +75,7 @@
 		DE30E8E1273E28C000791E8D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		DE456B1427416BC600A1B2AC /* MacroCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroCalcViewController.swift; sourceTree = "<group>"; };
 		DE4A9EFC2738DF6600C2ADFC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DEBE565D274DC8B6009ED36D /* ViewScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScheduleTableViewController.swift; sourceTree = "<group>"; };
 		DEED3CC52740727D00930C38 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		DEEF803127482193000F4E45 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		E3768584F106A6656CB1895E /* Pods-Fitness TrainerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness TrainerTests.debug.xcconfig"; path = "Target Support Files/Pods-Fitness TrainerTests/Pods-Fitness TrainerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,10 +169,10 @@
 				DEED3CC52740727D00930C38 /* CreateAccountViewController.swift */,
 				DE456B1427416BC600A1B2AC /* MacroCalcViewController.swift */,
 				554B20012741B4E3009DDA9C /* CreateScheduleViewController.swift */,
-				55F760B32741C5B900BEAB8E /* ViewScheduleTableViewController.swift */,
 				55F760B52741C7E800BEAB8E /* ViewScheduleCell.swift */,
 				DEEF803127482193000F4E45 /* EditProfileViewController.swift */,
 				DE107B512749669E003CC539 /* EditProfileTooViewController.swift */,
+				DEBE565D274DC8B6009ED36D /* ViewScheduleTableViewController.swift */,
 			);
 			path = "Fitness Trainer";
 			sourceTree = "<group>";
@@ -440,11 +440,11 @@
 				DE456B1527416BC600A1B2AC /* MacroCalcViewController.swift in Sources */,
 				DE2205E62727184D00499F02 /* Fitness_Trainer.xcdatamodeld in Sources */,
 				55F760B62741C7E800BEAB8E /* ViewScheduleCell.swift in Sources */,
-				55F760B42741C5B900BEAB8E /* ViewScheduleTableViewController.swift in Sources */,
 				DE2205DC2727184D00499F02 /* AppDelegate.swift in Sources */,
 				DE107B522749669E003CC539 /* EditProfileTooViewController.swift in Sources */,
 				DE30E8E2273E28C000791E8D /* HomePageViewController.swift in Sources */,
 				DE2205DE2727184D00499F02 /* SceneDelegate.swift in Sources */,
+				DEBE565E274DC8B6009ED36D /* ViewScheduleTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

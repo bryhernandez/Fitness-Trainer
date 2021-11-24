@@ -2,14 +2,17 @@
 //  ViewScheduleTableViewController.swift
 //  Fitness Trainer
 //
-//  Created by Oscar on 11/14/21.
+//  Created by Bryan Hernandez on 11/23/21.
 //
 
 import UIKit
 import Parse
 
 class ViewScheduleTableViewController: UITableViewController {
-    var plan = [PFObject]()
+    
+    var workouts = [PFObject]()
+    var size:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,20 +24,43 @@ class ViewScheduleTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ViewScheduleCell", for: indexPath) as! ViewScheduleCell
-       
-        let the_plan = plan[indexPath.row]
         
-        cell.workout.text = the_plan["Name"] as? String
+        let user = PFUser.current()!
+        let id = user.username as! String?
         
-        cell.Date.text = "something"
-        cell.workout.text = "sex"
-        //cell.sets.text = "ass"
-        cell.reps.text = "anal"
+//        print(id)
+        
+        let query = PFQuery(className:"Workouts")
+        query.whereKey("username", equalTo: id)
+        query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+            if let error = error {
+                // Log details of the failure
+                print(error.localizedDescription)
+            } else if let objects = objects {
+                // The find succeeded.
+                print("Successfully retrieved \(objects.count) users with workout.")
+                // Do something with the found objects
+                for workout in objects {
+                    print(workout["Sets"])
+                    print(workout["Reps"])
+                    print(workout["Date"])
+                    print(workout["Name"])
+                    let sets = workout["Sets"] as! Int?
+                    let reps = workout["Reps"] as! Int?
+                    cell.dateLabel.text = workout["Date"] as? String
+                    cell.workoutLabel.text = workout["Name"] as? String
+                    cell.setsLabel.text = String(Int(sets!))
+                    cell.repsLabel.text = String(Int(reps!))
+                }
+            }
+        }
         
         return cell
     }
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -42,7 +68,22 @@ class ViewScheduleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return workouts.count
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let user = PFUser.current()!
+        let id = user.username as! String?
+        let query = PFQuery(className:"Workouts")
+        query.whereKey("username", equalTo: id)
+        query.findObjectsInBackground { (workouts, error) in
+            if workouts != nil{
+                self.workouts = workouts!
+                self.tableView.reloadData()
+            }
+        }
     }
 
     /*
