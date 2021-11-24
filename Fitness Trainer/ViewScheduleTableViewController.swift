@@ -10,7 +10,7 @@ import Parse
 
 class ViewScheduleTableViewController: UITableViewController {
     
-    var workouts = [PFObject]()
+    var plan = [PFObject]()
     var size:Int = 0
     
     override func viewDidLoad() {
@@ -27,40 +27,34 @@ class ViewScheduleTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ViewScheduleCell", for: indexPath) as! ViewScheduleCell
-        
         let user = PFUser.current()!
+        let the_plan = plan[indexPath.row]
         let id = user.username as! String?
-        
-//        print(id)
-        
         let query = PFQuery(className:"Workouts")
+        
+        let sets = the_plan["Sets"] as! Int?
+        let reps = the_plan["Reps"] as! Int?
+        cell.dateLabel.text = the_plan["Date"] as? String
+        cell.workoutLabel.text = the_plan["Name"] as? String
+        cell.setsLabel.text = String(Int(sets!))
+        cell.repsLabel.text = String(Int(reps!))
+        
         query.whereKey("username", equalTo: id)
         query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
             if let error = error {
                 // Log details of the failure
                 print(error.localizedDescription)
-            } else if let objects = objects {
+            }
+            else if let objects = objects {
                 // The find succeeded.
-                print("Successfully retrieved \(objects.count) users with workout.")
+                print("Successfully retrieved \(objects.count) workouts with the user.")
+            
                 // Do something with the found objects
-                for workout in objects {
-                    print(workout["Sets"])
-                    print(workout["Reps"])
-                    print(workout["Date"])
-                    print(workout["Name"])
-                    let sets = workout["Sets"] as! Int?
-                    let reps = workout["Reps"] as! Int?
-                    cell.dateLabel.text = workout["Date"] as? String
-                    cell.workoutLabel.text = workout["Name"] as? String
-                    cell.setsLabel.text = String(Int(sets!))
-                    cell.repsLabel.text = String(Int(reps!))
-                }
+            
             }
         }
-        
         return cell
     }
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -68,7 +62,7 @@ class ViewScheduleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return workouts.count
+        return plan.count
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -80,7 +74,7 @@ class ViewScheduleTableViewController: UITableViewController {
         query.whereKey("username", equalTo: id)
         query.findObjectsInBackground { (workouts, error) in
             if workouts != nil{
-                self.workouts = workouts!
+                self.plan = workouts!
                 self.tableView.reloadData()
             }
         }
