@@ -46,10 +46,33 @@ func calc_cals(activity: Int, bmr: Int) -> Int{
       
 }
 
+func calc_fat(fat: Double, total_cals: Int) -> Int{
+    var fat_macros = fat*Double(total_cals)
+    fat_macros = fat_macros/9
+
+    return Int(fat_macros)
+}
+
+func calc_fat_cals(fat: Double, total_cals: Int) -> Int{
+    return Int(fat*Double(total_cals))
+}
+
 class MacroCalcViewController: UIViewController {
 
     @IBOutlet weak var activityControl: UISegmentedControl!
     @IBOutlet weak var maintanenceCalsLabel: UILabel!
+    @IBOutlet weak var addOrSubtractTextField: UITextField!
+    @IBOutlet weak var plusOrMinusControl: UISegmentedControl!
+    @IBOutlet weak var proteinControl: UISegmentedControl!
+    @IBOutlet weak var fatControl: UISegmentedControl!
+    @IBOutlet weak var proteinTextField: UILabel!
+    @IBOutlet weak var fatTextField: UILabel!
+    @IBOutlet weak var carbsTextField: UILabel!
+    @IBOutlet weak var totalCaloriesTextField: UILabel!
+    
+    
+    var maintanence_cals = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +80,8 @@ class MacroCalcViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onSave(_ sender: Any) {
+    
+    @IBAction func onActivitySelect(_ sender: Any) {
         let user = PFUser.current()! //gets the user that is currently logged in
         
         var bmr = 0.0 //body metabolic rate
@@ -79,9 +103,40 @@ class MacroCalcViewController: UIViewController {
         let activityC = [1, 2, 3, 4, 5]
         let activity = activityC[activityControl.selectedSegmentIndex]
         
-        let maintanence_cals = calc_cals(activity: activity, bmr: Int(bmr))
+        maintanence_cals = calc_cals(activity: activity, bmr: Int(bmr))
         
         maintanenceCalsLabel.text = String(format: "%.0f", Double(maintanence_cals))
+    }
+    
+    @IBAction func onSave(_ sender: Any) {
+        let user = PFUser.current()!
+        
+        var plus_minus = Int(addOrSubtractTextField.text!) ?? 0 //takes user input for how many calories they want to cut or bulk
+        let plus_minus_val = [1, 2]
+        let vals = plus_minus_val[plusOrMinusControl.selectedSegmentIndex]
+        if vals == 2{
+            plus_minus = -1*plus_minus
+        }
+        let total_cals = maintanence_cals+plus_minus
+        let lbs = (user["Weight"] as! Double?)!
+        
+        let protein_vals = [0.8, 0.9, 1.0, 1.1, 1.2]
+        let protein = protein_vals[proteinControl.selectedSegmentIndex]
+        let total_protein = protein*lbs
+        
+        let fat_vals = [0.2, 0.22, 0.24, 0.26, 0.28, 0.30]
+        let fat = fat_vals[fatControl.selectedSegmentIndex]
+        let total_fat = calc_fat(fat: fat, total_cals: total_cals)
+        print("fat: ", total_fat)
+        
+        let carbs = (total_cals) - ((Int(total_protein)*4) + calc_fat_cals(fat: fat, total_cals: total_cals))
+        let total_carbs = carbs/4
+        print("carbs: ", total_carbs)
+        
+        proteinTextField.text = String("\(total_protein) g")
+        fatTextField.text = String("\(total_fat) g")
+        carbsTextField.text = String("\(total_carbs) g")
+        totalCaloriesTextField.text = String(total_cals)
         
     }
     
