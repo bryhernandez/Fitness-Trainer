@@ -9,28 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--RingTone-->
-        <scene sceneID="mE9-5s-5Sc">
-            <objects>
-                <viewController id="wf8-P0-3df" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gZO-Ke-6Fh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="KqM-6F-vPs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="RingTone" id="G5B-Lf-5ey">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="krc-Lq-n87">
-                            <connections>
-                                <segue destination="OD5-Zb-5Sj" kind="presentation" id="xoA-CR-TFc"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eC4-CI-7FC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="770" y="1012"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -370,17 +348,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0L-ao-ci8">
-                                <rect key="frame" x="95" y="450" width="184" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Check Macros"/>
-                                <connections>
-                                    <segue destination="8ww-jO-BZo" kind="presentation" id="U1c-Zl-4cF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqE-6I-hVa">
-                                <rect key="frame" x="95" y="372" width="184" height="31"/>
+                                <rect key="frame" x="95" y="391" width="184" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create Schedule"/>
@@ -388,22 +357,22 @@
                                     <segue destination="MJL-YC-szy" kind="presentation" id="TpY-8n-BJK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN2-ji-fgw">
-                                <rect key="frame" x="95" y="411" width="184" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Set Ringtone"/>
-                                <connections>
-                                    <segue destination="HWH-Ur-dsC" kind="presentation" id="dSn-dz-RmN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-6u-h7R">
-                                <rect key="frame" x="95" y="333" width="184" height="31"/>
+                                <rect key="frame" x="95" y="352" width="184" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="View Schedule"/>
                                 <connections>
                                     <segue destination="OCo-hR-21V" kind="presentation" id="Ia2-Fa-sKX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0L-ao-ci8">
+                                <rect key="frame" x="95" y="430" width="184" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Check Macros"/>
+                                <connections>
+                                    <segue destination="8ww-jO-BZo" kind="presentation" id="U1c-Zl-4cF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -420,7 +389,6 @@
                     <connections>
                         <outlet property="createPlan" destination="xqE-6I-hVa" id="yjE-0I-KSF"/>
                         <outlet property="macrosButton" destination="C0L-ao-ci8" id="G0l-3r-962"/>
-                        <outlet property="ringTone" destination="fN2-ji-fgw" id="mGv-cX-XbT"/>
                         <outlet property="viewPlan" destination="fXC-6u-h7R" id="AIE-Sa-b2Q"/>
                     </connections>
                 </viewController>
@@ -1010,7 +978,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgg-2O-ftj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-877.60000000000002" y="1020.4433497536946"/>
+            <point key="canvasLocation" x="378" y="1012"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qT7-pB-NEQ">
@@ -1026,25 +994,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULe-tW-669" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1797" y="1021"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="7FH-2G-n4F">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="HWH-Ur-dsC" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nGZ-4d-cTI">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="wf8-P0-3df" kind="relationship" relationship="rootViewController" id="z9f-C7-a6b"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O5e-Yc-mfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="126" y="1012"/>
+            <point key="canvasLocation" x="-278" y="1012"/>
         </scene>
         <!--Profile-->
         <scene sceneID="7YV-t4-jeV">
@@ -1085,7 +1035,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JN2-C9-gvZ"/>
+        <segue reference="9ed-c1-fxo"/>
+        <segue reference="hiG-DY-Lrb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Fitness Trainer" width="500" height="500"/>

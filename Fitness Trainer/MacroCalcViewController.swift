@@ -76,8 +76,20 @@ class MacroCalcViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let toolBar = UIToolbar() //this adds a toolbar to the keyboards to allow users to exit the keyboard
+        toolBar.sizeToFit()
+        
+        let doneButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(self.doneClicked))
+        
+        toolBar.setItems([doneButton], animated: false)
+        
+        addOrSubtractTextField.inputAccessoryView = toolBar
+        
+    }
+    
+    @objc func doneClicked(){
+        view.endEditing(true)
     }
     
     
@@ -133,7 +145,7 @@ class MacroCalcViewController: UIViewController {
         let total_carbs = carbs/4
         print("carbs: ", total_carbs)
         
-        proteinTextField.text = String("\(total_protein) g")
+        proteinTextField.text = String("\(Int(total_protein)) g")
         fatTextField.text = String("\(total_fat) g")
         carbsTextField.text = String("\(total_carbs) g")
         totalCaloriesTextField.text = String(total_cals)
