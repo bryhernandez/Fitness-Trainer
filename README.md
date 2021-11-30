@@ -112,7 +112,7 @@ A calendar type app that will keep track of your workouts for the week. It works
 
 <img src="https://user-images.githubusercontent.com/61296527/142955136-ec58ca09-075c-4322-a4af-bd857da06bc8.gif" width=200>
 
-### Final Build
+### Progress for week 6 of project
 
 <img src="https://user-images.githubusercontent.com/44891178/143975439-e0d96c89-af49-4116-866d-a28ff4d6bf38.gif" width=200>
 
